@@ -156,6 +156,9 @@ body {
   font-size: 1.875rem;
 }
 
+.enter-header {
+  /*  */
+}
 .enter-header__login {
   font-family: Noto Sans;
   font-weight: 500;
