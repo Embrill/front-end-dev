@@ -28,7 +28,7 @@
 .enter-header {
 	// .enter-header__login
 	&__login {
-		font-family: Noto Sans;
+		font-family: "Noto Sans";
 		font-weight: 500;
 		font-size: rem(18);
 		line-height: math.div(24.52, 18);
@@ -41,7 +41,7 @@
 			width: 110%;
 			height: 2px;
 			opacity: 1;
-			background-color: rgb(255, 255, 255);
+			background-color: $mainColor;
 			position: absolute;
 			bottom: 1;
 			right: -3px;

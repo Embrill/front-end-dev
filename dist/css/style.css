@@ -160,7 +160,7 @@ body {
   /*  */
 }
 .enter-header__login {
-  font-family: Noto Sans;
+  font-family: "Noto Sans";
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.3622222222;
@@ -173,7 +173,7 @@ body {
   width: 110%;
   height: 2px;
   opacity: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: absolute;
   bottom: 1;
   right: -3px;
@@ -230,3 +230,82 @@ body {
 	}
 }
 */
+.body-intro {
+  display: flex;
+}
+.body-intro__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  max-width: 46.875rem;
+  margin-top: 140px;
+}
+.body-intro__text {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  max-width: 30.3125rem;
+  margin-top: 130px;
+  position: relative;
+  padding-left: 125px;
+}
+.body-intro__text::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 4px;
+  transform: rotate(120.61deg);
+  background-color: #fff;
+  position: absolute;
+  left: -30px;
+  bottom: 50px;
+}
+.body-intro__text::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 0;
+  top: -60px;
+  background: rgba(96, 92, 234, 0.5);
+  filter: blur(60px);
+  z-index: -1;
+}
+.phone-intro {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.phone-intro::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 662.63px;
+  height: 783.03px;
+  right: -350px;
+  top: -310px;
+  background: rgba(250, 0, 255, 0.2);
+  filter: blur(250px);
+  transform: rotate(-105.26deg);
+  z-index: -1;
+}
+.phone-intro__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  margin-top: 80px;
+}
+.phone-intro__download {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.1875rem;
+  line-height: 4.375rem;
+}
+.phone-intro__apps {
+  margin-right: 30px;
+}
