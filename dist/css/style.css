@@ -156,9 +156,6 @@ body {
   font-size: 1.875rem;
 }
 
-.enter-header {
-  /*  */
-}
 .enter-header__login {
   font-family: "Noto Sans";
   font-weight: 500;
@@ -276,7 +273,7 @@ body {
 .phone-intro {
   position: relative;
   top: 0;
-  right: 0;
+  right: -35px;
   z-index: 10;
 }
 .phone-intro::before {
@@ -307,5 +304,67 @@ body {
   line-height: 4.375rem;
 }
 .phone-intro__apps {
-  margin-right: 30px;
+  /* margin-right: 30px; */
+}
+.cookies__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.cookies__text {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+}
+.cookies__btn {
+  display: inline-block;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid #fff;
+  border-radius: 6px;
+}
+
+.section--cookies {
+  background-color: #212834;
+}
+
+.section--mission {
+  margin-top: 60px;
+}
+
+.mission__items {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+.mission__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  min-height: 312px;
+  padding-left: 55px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 21px;
+}
+
+.item-mission__title {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.5625rem;
+  max-width: 21.25rem;
+}
+.item-mission__link {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  margin-top: 30px;
 }

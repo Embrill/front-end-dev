@@ -1,0 +1,35 @@
+.section {
+}
+.cookies {
+    // .cookies__container
+    &__container {
+    }
+    // .cookies__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    // .cookies__text
+    &__text {
+        font-family: "Noto Sans";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: 19px;
+    }
+    // .cookies__btn
+    &__btn {
+        display: inline-block;
+        font-family: "Noto Sans";
+        font-weight: 400;
+        font-size: rem(14);
+        padding: 20px 60px;
+        background: $cookieButtonBG;
+        border: 0.5px solid $mainColor;
+        border-radius: 6px;
+    }
+}
+.section--cookies {
+    background-color: $cookieBG;
+}
