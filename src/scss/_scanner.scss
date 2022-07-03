@@ -1,0 +1,57 @@
+.section {
+}
+.section--scanner {
+    background: url(../img/scanner/bg-scanner.png) center/cover no-repeat;
+    margin-top: 280px;
+    padding-bottom: 0;
+    min-height: 836px;
+    margin-bottom: 275px;
+
+    box-shadow: inset 0 100px 100px #000, inset 0 -100px 100px #000;
+}
+
+.scanner {
+    // .scanner__container
+    &__container {
+    }
+    // .scanner__body
+    &__body {
+    }
+}
+.body-scanner {
+    display: flex;
+    justify-content: space-between;
+
+    // .body-scanner__phones
+    &__phones {
+    }
+}
+.phones-scanner {
+    display: flex;
+    gap: 50px;
+    width: 64%;
+    position: relative;
+    left: 0px;
+    bottom: -442px;
+    // .phones-scanner__item
+    &__item {
+        img {
+            display: block;
+            max-width: 332px;
+            height: auto;
+        }
+    }
+}
+.description {
+    // .description__title
+    &__title {
+    }
+    // .description__text
+    &__text {
+    }
+}
+.description--body-scanner {
+    position: relative;
+    right: 0px;
+    bottom: -830px;
+}
