@@ -468,3 +468,65 @@ body {
   right: 0px;
   bottom: -830px;
 }
+
+.section--tool {
+  margin-top: 480px;
+  margin-bottom: 340px;
+}
+
+.body-tool {
+  display: flex;
+  justify-content: space-between;
+}
+.description--body-tool {
+  width: 50%;
+}
+
+.description__text--body-tool {
+  width: 75%;
+}
+
+.schedules-tool {
+  width: 60%;
+}
+.schedules-tool__body {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.schedules-tool__item-1 {
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+.schedules-tool__item-2 {
+  position: absolute;
+  right: 245px;
+  top: 180px;
+}
+.schedules-tool__item-3 {
+  position: absolute;
+  right: 0;
+  top: 180px;
+}
+.schedules-tool__item-4 {
+  position: absolute;
+  left: 0;
+  top: 250px;
+}
+.schedules-tool__item-5 {
+  position: absolute;
+  right: 170px;
+  top: 280px;
+  z-index: 2;
+}
+.schedules-tool__item-6 {
+  position: absolute;
+  right: 250px;
+  top: 380px;
+}
+.schedules-tool__item-7 {
+  position: absolute;
+  right: -70px;
+  bottom: -510px;
+}
