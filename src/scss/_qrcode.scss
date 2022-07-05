@@ -1,0 +1,192 @@
+.section {
+}
+.section--qrcode {
+}
+.qrcode__bg {
+    background: url("../img/qrcode/dj-bg-qrcode.png") top left no-repeat;
+    min-width: 811px;
+    min-height: 606px;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+
+    box-shadow: -11px 2px 65px 76px rgba(0, 0, 0, 1) inset;
+}
+.qrcode {
+    // .qrcode__container
+    &__container {
+        position: relative;
+    }
+    // .qrcode__nightlike
+    &__nightlike {
+        max-width: 138px;
+        margin-left: auto;
+        margin-right: -60px;
+    }
+    // .qrcode__header
+    &__header {
+    }
+    // .qrcode__footer
+    &__footer {
+    }
+}
+.header-qrcode {
+    // .header-qrcode__body
+    &__body {
+        display: flex;
+        padding-top: 150px;
+    }
+    // .header-qrcode__description
+    &__description {
+        margin-top: 310px;
+    }
+    // .header-qrcode__apps
+    &__apps {
+        margin-top: 56px;
+    }
+    // .header-qrcode__app-store
+    &__app-store {
+    }
+    // .header-qrcode__google-play
+    &__google-play {
+        margin-left: 28px;
+    }
+    // .header-qrcode__phones
+    &__phones {
+    }
+}
+.description {
+    // .description__title
+    &__title {
+    }
+    // .description__text
+    &__text {
+    }
+    // .description__text--header-qrcode
+    &__text--header-qrcode {
+    }
+    // .description__text--footer-qrcode
+    &__text--footer-qrcode {
+        width: 25%;
+    }
+}
+.description--header-qrcode {
+    width: 50%;
+}
+.phones-qrcode {
+    display: flex;
+    column-gap: 80px;
+    width: 55%;
+    // .phones-qrcode__item
+    &__item {
+    }
+    &__item:last-child {
+        margin-top: 330px;
+    }
+}
+.footer-qrcode {
+    margin-top: 42px;
+    // .footer-qrcode__body
+    &__body {
+        position: relative;
+    }
+    // .footer-qrcode__phone
+    &__phone {
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            min-width: 1000px;
+            height: 668px;
+            right: 0;
+            left: 0;
+            top: 0;
+            z-index: -1;
+
+            background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+            opacity: 0.25;
+            filter: blur(311.569px);
+            border-radius: 476.034px;
+            transform: rotate(-0.55deg);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    // .footer-qrcode__arrows
+    &__arrows {
+    }
+}
+.arrows-qrcode {
+    position: absolute;
+    right: 310px;
+    top: 230px;
+    z-index: 10;
+    // .arrows-qrcode__arrow
+    &__arrow {
+    }
+    // .arrows-qrcode__text
+    &__text {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: rem(21);
+        line-height: rem(26);
+
+        position: absolute;
+        right: -150px;
+        bottom: -40px;
+        z-index: 10;
+    }
+}
+.description--footer-qrcode {
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.description__title--footer-qrcode {
+    width: 40%;
+}
+
+.footer-qrcode {
+    // .footer-qrcode__notab
+    &__notab {
+    }
+}
+
+// NOTAB
+.notab-qrcode {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    // .notab-qrcode__body
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 100px;
+    }
+    // .notab-qrcode__row
+    &__row {
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+    }
+    // .notab-qrcode__text
+    &__text {
+        font-size: rem(200);
+        color: rgba(55, 43, 67, 0.62);
+        opacity: 0.5;
+    }
+    // .notab-qrcode__row--2
+    &__row--2 {
+        justify-content: space-around;
+        column-gap: 500px;
+    }
+}
