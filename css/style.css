@@ -103,10 +103,10 @@ body {
 */
 [class*=__container] {
   margin: 0 auto;
-  max-width: 70.3125rem;
+  max-width: 76.5625rem;
   box-sizing: content-box;
 }
-@media (max-width: 72.1875em) {
+@media (max-width: 78.4375em) {
   [class*=__container] {
     max-width: 60.625rem;
   }
@@ -273,7 +273,7 @@ body {
 .phone-intro {
   position: relative;
   top: 0;
-  right: -35px;
+  right: -95px;
   z-index: 10;
 }
 .phone-intro::before {
@@ -471,7 +471,8 @@ body {
 
 .section--tool {
   margin-top: 480px;
-  margin-bottom: 340px;
+  margin-bottom: 545px;
+  /* +205px */
 }
 
 .body-tool {
@@ -529,4 +530,138 @@ body {
   position: absolute;
   right: -70px;
   bottom: -510px;
+}
+
+.qrcode__bg {
+  background: url("../img/qrcode/dj-bg-qrcode.png") top left no-repeat;
+  min-width: 811px;
+  min-height: 606px;
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  box-shadow: -11px 2px 65px 76px rgb(0, 0, 0) inset;
+}
+
+.qrcode__container {
+  position: relative;
+}
+.qrcode__nightlike {
+  max-width: 138px;
+  margin-left: auto;
+  margin-right: -60px;
+}
+.header-qrcode__body {
+  display: flex;
+  padding-top: 150px;
+}
+.header-qrcode__description {
+  margin-top: 310px;
+}
+.header-qrcode__apps {
+  margin-top: 56px;
+}
+.header-qrcode__google-play {
+  margin-left: 28px;
+}
+.description__text--footer-qrcode {
+  width: 25%;
+}
+
+.description--header-qrcode {
+  width: 50%;
+}
+
+.phones-qrcode {
+  display: flex;
+  column-gap: 80px;
+  width: 55%;
+}
+.phones-qrcode__item:last-child {
+  margin-top: 330px;
+}
+
+.footer-qrcode {
+  margin-top: 42px;
+}
+.footer-qrcode__body {
+  position: relative;
+}
+.footer-qrcode__phone {
+  position: relative;
+}
+.footer-qrcode__phone::before {
+  display: block;
+  content: "";
+  position: absolute;
+  min-width: 1000px;
+  height: 668px;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  opacity: 0.25;
+  filter: blur(311.569px);
+  border-radius: 476.034px;
+  transform: rotate(-0.55deg);
+}
+.footer-qrcode__phone img {
+  display: block;
+  margin: 0 auto;
+}
+.arrows-qrcode {
+  position: absolute;
+  right: 310px;
+  top: 230px;
+  z-index: 10;
+}
+.arrows-qrcode__text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  position: absolute;
+  right: -150px;
+  bottom: -40px;
+  z-index: 10;
+}
+
+.description--footer-qrcode {
+  margin-top: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.description__title--footer-qrcode {
+  width: 40%;
+}
+
+.notab-qrcode {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.notab-qrcode__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+.notab-qrcode__row {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+.notab-qrcode__text {
+  font-size: 12.5rem;
+  color: rgba(55, 43, 67, 0.62);
+  opacity: 0.5;
+}
+.notab-qrcode__row--2 {
+  justify-content: space-around;
+  column-gap: 500px;
 }
