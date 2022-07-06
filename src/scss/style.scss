@@ -6,7 +6,8 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
@@ -151,6 +152,7 @@ body {
 @import "_scanner";
 @import "_tool";
 @import "_qrcode";
+@import "_ordering";
 
 // Подключение стилей отдельных страниц
 @import "home";

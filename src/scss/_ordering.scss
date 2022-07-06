@@ -1,0 +1,124 @@
+.section {
+}
+.section--ordering {
+    margin-top: 190px;
+}
+.ordering {
+    // .ordering__container
+    &__container {
+    }
+    // .ordering__body
+    &__body {
+    }
+}
+.body-ordering {
+    // .body-ordering__description
+    &__description {
+        display: flex;
+        justify-content: end;
+    }
+    // .body-ordering__content
+    &__content {
+    }
+}
+.description {
+    // .description__title
+    &__title {
+    }
+    // .description__title--body-ordering
+    &__title--body-ordering {
+    }
+    // .description__text
+    &__text {
+    }
+    // .description__text--body-ordering
+    &__text--body-ordering {
+    }
+}
+.description--body-ordering {
+    width: 40%;
+}
+.content-ordering {
+    position: relative;
+    // .content-ordering__phone
+    &__phone {
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            min-width: 146px;
+            height: 267px;
+            right: -180px;
+            top: 0;
+            z-index: -1;
+            background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+            opacity: 0.3;
+            filter: blur(130px);
+            transform: rotate(5.78deg);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.phone-ordering {
+    // .phone-ordering__row
+    &__row {
+        display: flex;
+        width: 62%;
+
+        position: absolute;
+        top: 350px;
+        left: 175px;
+        z-index: 10;
+    }
+    // .phone-ordering__row--1
+    &__row--1 {
+    }
+    // .phone-ordering__text
+    &__text {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: rem(27);
+
+        background: #000000;
+        border: 0.7px solid rgba(255, 255, 255, 0.5);
+        border-radius: 18px;
+
+        padding: 23px;
+    }
+    // .phone-ordering__text--1
+    &__text--1 {
+        width: 35%;
+        &:last-child {
+            /* margin-left: 214px; */
+            position: absolute;
+            top: -130px;
+            right: 0;
+            z-index: 10;
+            width: 35%;
+        }
+    }
+    // .phone-ordering__row--2
+    &__row--2 {
+        position: absolute;
+        top: 720px;
+        left: 370px;
+        z-index: 10;
+    }
+    // .phone-ordering__text--2
+    &__text--2 {
+        width: 23%;
+        &:last-child {
+            /* margin-left: 214px; */
+            position: absolute;
+            bottom: 50px;
+            right: 60px;
+            z-index: 10;
+            width: 25%;
+        }
+    }
+}
