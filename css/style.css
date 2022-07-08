@@ -750,3 +750,17 @@ body {
   z-index: 10;
   width: 25%;
 }
+
+.notab__bg {
+  padding: 300px 10px;
+  background: url("../img/notab/notab-notab.svg") left top repeat;
+  box-shadow: inset 0 250px 200px #000, inset 0 -250px 200px #000;
+}
+.bg-notab {
+  position: relative;
+}
+
+.body-notab__phone img {
+  display: block;
+  margin: 0 auto;
+}
