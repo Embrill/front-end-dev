@@ -2,6 +2,20 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 @charset "UTF-8";
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("../fonts/Avenir-Medium.woff2") format("woff2"), url("../fonts/Avenir-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Avenir;
+  font-display: swap;
+  src: url("../fonts/Avenir-Heavy.woff2") format("woff2"), url("../fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -286,6 +300,63 @@ body {
 	}
 }
 */
+.footer {
+  padding: 150px 0 85px 0;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+.item-footer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 16px;
+}
+.item-footer:first-child {
+  position: relative;
+}
+.item-footer:first-child::after {
+  content: "";
+  position: absolute;
+  width: 405px;
+  height: 411px;
+  left: -210px;
+  top: 10px;
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  filter: blur(300px);
+  opacity: 0.7;
+  z-index: -1;
+}
+.item-footer:last-child {
+  position: relative;
+}
+.item-footer:last-child::after {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 340px;
+  left: 170px;
+  top: -740px;
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  filter: blur(300px);
+  opacity: 0.7;
+  z-index: -1;
+}
+.item-footer__text {
+  font-family: "Avenir";
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.item-footer__text--notab {
+  font-family: "Montserrat";
+}
+
+.item-footer__text--contact {
+  font-weight: 500;
+}
+
 .body-intro {
   display: flex;
   margin-top: 18px;
@@ -1043,6 +1114,10 @@ body {
   margin: 0 auto;
 }
 
+.section--contacts {
+  margin-top: 50px;
+}
+
 .description__text--body-contacts {
   max-width: 50%;
   margin: 20px auto 0 auto;
@@ -1052,6 +1127,19 @@ body {
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  position: relative;
+}
+.description--body-contacts::after {
+  content: "";
+  position: absolute;
+  width: 89px;
+  height: 60px;
+  left: 260px;
+  top: 50px;
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  filter: blur(60px);
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .form-contacts {
@@ -1122,6 +1210,11 @@ body {
   padding: 30px 24px;
   border: 1px solid #5c5c5c;
   border-radius: 10px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
 }
 .form-contacts__default::placeholder {
   font-family: "Noto Sans";
