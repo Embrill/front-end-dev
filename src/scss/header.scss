@@ -1,5 +1,6 @@
 //====================================================================================================
 .header {
+	z-index: 1000;
 	// .header__container
 	&__container {
 	}
@@ -8,6 +9,9 @@
 		margin-top: 20px;
 		display: flex;
 		align-items: center;
+		@media (max-width: $mobile) {
+			justify-content: space-between;
+		}
 	}
 	// .header__logo
 	&__logo {
@@ -15,23 +19,35 @@
 	// .header__enter
 	&__enter {
 		margin-left: 135px;
+		@media (max-width: $mobile) {
+			margin-left: 0;
+		}
 	}
 }
 .logo-header {
 	display: flex;
 	align-items: center;
+	img {
+		@include adaptiveValue("max-width", 107, 50);
+	}
 	// .logo-header__text
 	&__text {
-		font-size: rem(30);
+		@include adaptiveValue("font-size", 30, 14);
 	}
 }
 .enter-header {
+	img {
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
 	// .enter-header__login
 	&__login {
 		font-family: "Noto Sans";
 		font-weight: 500;
-		font-size: rem(18);
-		line-height: math.div(24.52, 18);
+		@include adaptiveValue("font-size", 18, 16);
+		@include adaptiveValue("line-height", 24, 19);
+
 		margin-left: 10px;
 		position: relative;
 
