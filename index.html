@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220708210623">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220709175033">
 	<!-- 	<link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
 					<div class="intro__body body-intro">
 
 						<div class="body-intro__description">
-							<h2 class="body-intro__title">A platform that&nbsp;works&nbsp;smarter</h2>
+							<h2 class="body-intro__title">A platform that works smarter</h2>
 							<p class="body-intro__text">
 								NoTab allows bars & nightclubs to manage, understand, and grow their
 								business from a single dashboard
@@ -52,13 +52,13 @@
 
 
 					</div>
-					<div class="phone-intro__btns">
-						<a href="#" class="phone-intro__download">DOWNLOAD OUR APP</a>
-						<div class="phone-intro__apps">
-							<a class="phone-intro__app-store" href="#">
+					<div class="btns-download btns-download--phone-intro">
+						<div class="btns-download__download">DOWNLOAD OUR APP</div>
+						<div class="btns-download__apps">
+							<a class="btns-download__app-store" href="#">
 								<picture><source srcset="img/intro/appStore-intro.webp" type="image/webp"><img src="img/intro/appStore-intro.png" alt="app-store"></picture>
 							</a>
-							<a class="phone-intro__google-play" href="#">
+							<a class="btns-download__google-play" href="#">
 								<picture><source srcset="img/intro/googlePlay-intro.webp" type="image/webp"><img src="img/intro/googlePlay-intro.png" alt="google-play"></picture>
 							</a>
 						</div>
@@ -330,25 +330,67 @@
 
 				</div>
 			</section>
+			<section class="section section--contacts">
+				<div class="contacts__container">
+
+					<div class="contacts__body body-contacts">
+
+						<div class="body-contacts__description">
+							<div class="description description--body-contacts">
+								<div class="description__title description__title--body-contacts">
+									<h2>Get In Touch</h2>
+								</div>
+								<div class="description__text description__text--body-contacts">
+									<p>
+										Have questions about Noble or just want to say hello?
+										Drop us a line and a member of our team will getback to you shortly.
+									</p>
+								</div>
+							</div>
+						</div><!-- /.description -->
+
+						<form class="body-contacts__form form-contacts" action="/">
+
+							<div class="form-contacts__inner">
+								<input required class="form-contacts__name form-contacts__default" type="text" placeholder="Name"></input>
+								<input required class="form-contacts__venue-name form-contacts__default" type="text" placeholder="Venue Name"></input>
+								<div class="form-contacts__city">
+									<input required class="form-contacts__venue-city form-contacts__default" type="text" placeholder="Venue City"></input>
+									<input required class="form-contacts__state-city form-contacts__default" type="text" placeholder="State City"></input>
+								</div>
+								<input required class="form-contacts__email form-contacts__default" type="email" placeholder="Email"></input>
+								<input required class="form-contacts__subject form-contacts__default" type="text" placeholder="Subject"></input>
+								<textarea required class="form-contacts__message form-contacts__default" placeholder="Message"></textarea>
+							</div>
+
+							<button class="form-contacts__button" type="submit">Send</button>
+
+						</form><!-- /.form -->
+
+						<div class="btns-download btns-download--form-contacts">
+							<div class="btns-download__download btns-download__download--form-contacts">DOWNLOAD OUR APP</div>
+							<div class="btns-download__apps btns-download__apps--form-contacts">
+								<a class="btns-download__app-store btns-download__app-store--form-contacts" href="#">
+									<picture><source srcset="img/intro/appStore-intro.webp" type="image/webp"><img src="img/intro/appStore-intro.png" alt="app-store"></picture>
+								</a>
+								<a class="btns-download__google-play btns-download__google-play--form-contacts" href="#">
+									<picture><source srcset="img/intro/googlePlay-intro.webp" type="image/webp"><img src="img/intro/googlePlay-intro.png" alt="google-play"></picture>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
 
-	<script src="js/app.min.js?_v=20220708210623"></script>
+	<script src="js/app.min.js?_v=20220709175033"></script>
 </body>
 
 </html>
