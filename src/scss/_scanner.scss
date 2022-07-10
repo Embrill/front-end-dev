@@ -1,13 +1,18 @@
 .section {
 }
 .section--scanner {
-    background: url(../img/scanner/bg-scanner.png) center/cover no-repeat;
-    margin-top: 280px;
+    background: url(../img/scanner/bg-scanner.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 50%;
     padding-bottom: 0;
-    min-height: 836px;
-    margin-bottom: 275px;
+    max-height: 836px;
 
-    box-shadow: inset 0 100px 100px #000, inset 0 -100px 100px #000;
+    @media (max-width: $mobile) {
+        box-shadow: none;
+        background-position: 0 0;
+        max-height: 100%;
+    }
+    box-shadow: inset 0 100px 40px #000, inset 0 -40px 100px #000;
 }
 
 .scanner {
@@ -21,24 +26,38 @@
 .body-scanner {
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: $mobile) {
+        flex-direction: column-reverse;
+    }
     // .body-scanner__phones
     &__phones {
     }
 }
 .phones-scanner {
     display: flex;
-    gap: 50px;
-    width: 64%;
-    position: relative;
-    left: 0px;
-    bottom: -442px;
+    @include adaptiveValue("gap", 50, 10);
+    width: 0%;
+    padding-top: 442px;
+    @media (max-width: $mobile) {
+        flex-direction: column;
+        left: 50%;
+        padding-top: 70px;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
     // .phones-scanner__item
     &__item {
         img {
             display: block;
             max-width: 332px;
+            @include adaptiveValue("max-width", 332, 2);
             height: auto;
+
+            @media (max-width: $mobile) {
+                @include adaptiveValue("max-width", 332, 287);
+            }
         }
     }
 }
@@ -51,7 +70,12 @@
     }
 }
 .description--body-scanner {
-    position: relative;
-    right: 0px;
-    bottom: -830px;
+    @include adaptiveValue("padding-top", 830, 410);
+
+    width: rem(367.5);
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        @include adaptiveValue("padding-top", 700, 220);
+    }
 }
