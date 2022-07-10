@@ -999,7 +999,7 @@ body {
 }
 
 .section--scanner {
-  background: url(../img/scanner/bg-scanner.png) 0 0/100% auto no-repeat;
+  background: url(../img/scanner/bg-scanner.png) 50% center/100% auto no-repeat;
   background-size: 100% auto;
   background-position: 50%;
   padding-bottom: 0;
