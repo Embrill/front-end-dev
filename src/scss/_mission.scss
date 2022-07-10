@@ -2,7 +2,9 @@
 }
 .section--mission {
     margin-top: 60px;
-    @include adaptiveValue("padding-bottom", 280, 0);
+    @media (min-width: $mobileSmall) {
+        @include adaptiveValue("padding-bottom", 280, 1);
+    }
     @media (max-width: $mobileSmall) {
         padding-bottom: 500px;
     }
@@ -101,7 +103,9 @@
     &__phone {
         position: relative;
         width: 0%; /* 70% */
-        @include adaptiveValue("left", -420, -1085);
+        @media (min-width: $mobileSmall) {
+            @include adaptiveValue("left", -420, -1085);
+        }
         left: -420px;
 
         @media (max-width: $mobileSmall) {

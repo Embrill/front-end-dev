@@ -38,9 +38,9 @@
 
         position: relative;
         @media (max-width: $tablet) {
-            @include adaptiveValue("padding-left", 5, 0);
+            padding-left: 0;
         }
-        padding-left: 125px;
+        padding-left: rem(125);
 
         &::before {
             content: "";

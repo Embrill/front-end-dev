@@ -1,7 +1,7 @@
 .section {
 }
 .section--scanner {
-    background: url(../img/scanner/bg-scanner.png) no-repeat;
+    background: url(../img/scanner/bg-scanner.png) 0 0/100% auto no-repeat;
     background-size: 100% auto;
     background-position: 50%;
     padding-bottom: 0;
@@ -52,7 +52,9 @@
         img {
             display: block;
             max-width: 332px;
-            @include adaptiveValue("max-width", 332, 2);
+            @media (min-width: $mobile) {
+                @include adaptiveValue("max-width", 332, 2);
+            }
             height: auto;
 
             @media (max-width: $mobile) {
@@ -70,9 +72,14 @@
     }
 }
 .description--body-scanner {
-    @include adaptiveValue("padding-top", 830, 410);
+    @media (min-width: $mobile) {
+        width: 100%;
+        @include adaptiveValue("padding-top", 830, 410);
+    }
 
-    width: rem(367.5);
+    @media (min-width: $mobile) {
+        width: rem(367.5);
+    }
 
     @media (max-width: $mobile) {
         width: 100%;
