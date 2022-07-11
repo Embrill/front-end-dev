@@ -1,7 +1,13 @@
 .section {
 }
 .section--tool {
-    margin-top: 480px;
+    @media (min-width: $mobile) {
+        @include adaptiveValue("margin-top", 480, 100);
+    }
+    @media (max-width: $mobile) {
+        margin-top: 100px;
+    }
+    /* margin-top: 480px; */
     margin-bottom: 545px; /* +205px */
 }
 .tool {
@@ -28,60 +34,154 @@
     }
 }
 .description--body-tool {
-    width: 50%;
+    @media (min-width: $mobile) {
+        /* width: rem(550); */
+        @include adaptiveValue("width", 550, 350);
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        /* @include adaptiveValue("padding-top", 700, 220); */
+    }
+
+    z-index: 10;
 }
 .description__text--body-tool {
     width: 75%;
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
 }
 .schedules-tool {
-    width: 60%;
+    width: 1%;
     // .schedules-tool__body
     &__body {
         display: flex;
         flex-wrap: wrap;
         position: relative;
+
+        @media (max-width: $pc) {
+            @include adaptiveValue("bottom", 1, -150);
+        }
     }
     // .schedules-tool__item-1
     &__item-1 {
         position: absolute;
-        right: 40px;
-        top: 0;
+
+        @media (min-width: $mobile) {
+            right: 40px;
+            top: 0;
+        }
+
+        @media (max-width: $mobile) {
+            right: 250px;
+            top: 140px;
+            img {
+                @include adaptiveValue("max-width", 252, 144);
+            }
+        }
     }
     // .schedules-tool__item-2
     &__item-2 {
         position: absolute;
-        right: 245px;
-        top: 180px;
+
+        @media (min-width: $mobile) {
+            right: 245px;
+            top: 180px;
+        }
+
+        @media (max-width: $mobile) {
+            right: 215px;
+            top: 80px;
+            img {
+                @include adaptiveValue("max-width", 234, 109);
+            }
+        }
     }
     // .schedules-tool__item-3
     &__item-3 {
         position: absolute;
-        right: 0;
-        top: 180px;
+
+        @media (min-width: $mobile) {
+            right: 0;
+            top: 180px;
+        }
+
+        @media (max-width: $mobile) {
+            right: 10px;
+            top: 40px;
+            img {
+                @include adaptiveValue("max-width", 183, 86);
+            }
+        }
     }
     // .schedules-tool__item-4
     &__item-4 {
         position: absolute;
-        left: 0;
-        top: 250px;
+
+        @media (min-width: $mobile) {
+            left: -590px;
+            top: 250px;
+        }
+
+        @media (max-width: $mobile) {
+            left: -540px;
+            top: 50px;
+            img {
+                @include adaptiveValue("max-width", 193, 90);
+            }
+        }
     }
     // .schedules-tool__item-5
     &__item-5 {
         position: absolute;
-        right: 170px;
-        top: 280px;
+
+        @media (min-width: $mobile) {
+            right: 170px;
+            top: 280px;
+        }
+
         z-index: 2;
+        @media (max-width: $mobile) {
+            right: 90px;
+            top: 60px;
+            img {
+                @include adaptiveValue("max-width", 195, 90);
+            }
+        }
     }
     // .schedules-tool__item-6
     &__item-6 {
         position: absolute;
-        right: 250px;
-        top: 380px;
+
+        @media (min-width: $mobile) {
+            right: 250px;
+            top: 380px;
+        }
+
+        @media (max-width: $mobile) {
+            right: 140px;
+            top: 125px;
+            img {
+                @include adaptiveValue("max-width", 195, 90);
+            }
+        }
     }
     // .schedules-tool__item-7
     &__item-7 {
         position: absolute;
-        right: -70px;
-        bottom: -510px;
+
+        @media (min-width: $mobile) {
+            right: -70px;
+            bottom: -510px;
+        }
+
+        @media (max-width: $mobile) {
+            right: -70px;
+            bottom: -290px;
+            img {
+                @include adaptiveValue("max-width", 282, 296);
+            }
+        }
     }
 }
