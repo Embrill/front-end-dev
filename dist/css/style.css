@@ -1136,7 +1136,6 @@ body {
 }
 
 .section--tool {
-  /* margin-top: 480px; */
   margin-bottom: 545px;
   /* +205px */
 }
@@ -1158,6 +1157,7 @@ body {
 @media (max-width: 47.99875em) {
   .section--tool {
     margin-top: 100px;
+    margin-bottom: 165px;
   }
 }
 
@@ -1441,13 +1441,59 @@ body {
 
 .qrcode__bg {
   background: url("../img/qrcode/dj-bg-qrcode.png") top left no-repeat;
-  min-width: 811px;
-  min-height: 606px;
   position: absolute;
   left: -100px;
   top: 0;
   z-index: -1;
   box-shadow: -11px 2px 65px 76px rgb(0, 0, 0) inset;
+}
+@media (min-width: 47.99875em) {
+  .qrcode__bg {
+    min-width: 811px;
+    min-height: 606px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .qrcode__bg {
+    background: url("../img/qrcode/dj-bg-qrcode.png") top left/cover no-repeat;
+    box-shadow: 0px 2px 35px 30px rgb(0, 0, 0) inset;
+    top: 150px;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 78.4375em) {
+  .qrcode__bg {
+    min-width: 50.6875rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .qrcode__bg {
+    min-width: clamp( 37.5rem , 31.8803267045rem  +  23.9772727273vw , 50.6875rem );
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 23.4375em) {
+  .qrcode__bg {
+    min-width: 37.5rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 78.4375em) {
+  .qrcode__bg {
+    min-height: 37.875rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .qrcode__bg {
+    min-height: clamp( 21rem , 13.8089488636rem  +  30.6818181818vw , 37.875rem );
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 23.4375em) {
+  .qrcode__bg {
+    min-height: 21rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .qrcode__bg {
+    top: 200px;
+  }
 }
 
 .qrcode__container {
@@ -1458,25 +1504,76 @@ body {
   margin-left: auto;
   margin-right: -60px;
 }
+@media (max-width: 78.4375em) {
+  .qrcode__nightlike {
+    margin-right: 0;
+  }
+}
 .header-qrcode__body {
   display: flex;
   padding-top: 150px;
 }
+@media (max-width: 47.99875em) {
+  .header-qrcode__body {
+    flex-direction: column;
+    gap: 240px;
+  }
+}
 .header-qrcode__description {
   margin-top: 310px;
 }
-.header-qrcode__apps {
-  margin-top: 56px;
+@media (min-width: 78.4375em) {
+  .header-qrcode__apps {
+    margin-top: 3.5rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .header-qrcode__apps {
+    margin-top: clamp( 3.125rem , 2.9651988636rem  +  0.6818181818vw , 3.5rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .header-qrcode__apps {
+    margin-top: 3.125rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header-qrcode__apps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header-qrcode__app-store img {
+    width: 11.5625rem;
+  }
 }
 .header-qrcode__google-play {
   margin-left: 28px;
+}
+@media (max-width: 47.99875em) {
+  .header-qrcode__google-play {
+    margin-left: 0;
+  }
 }
 .description__text--footer-qrcode {
   width: 25%;
 }
 
 .description--header-qrcode {
-  width: 50%;
+  width: 70%;
+}
+@media (max-width: 61.99875em) {
+  .description--header-qrcode {
+    width: 80%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .description--header-qrcode {
+    width: 100%;
+  }
 }
 
 .phones-qrcode {
@@ -1484,8 +1581,51 @@ body {
   column-gap: 80px;
   width: 55%;
 }
+@media (max-width: 78.4375em) {
+  .phones-qrcode {
+    flex-direction: column;
+  }
+}
+@media (max-width: 61.99875em) {
+  .phones-qrcode {
+    width: 45%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .phones-qrcode {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (min-width: 78.4375em) {
+  .phones-qrcode__item img {
+    max-width: 20.8125rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .phones-qrcode__item img {
+    max-width: clamp( 17.5rem , 16.0884232955rem  +  6.0227272727vw , 20.8125rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .phones-qrcode__item img {
+    max-width: 17.5rem;
+  }
+}
 .phones-qrcode__item:last-child {
   margin-top: 330px;
+}
+@media (max-width: 78.4375em) {
+  .phones-qrcode__item:last-child {
+    margin-top: 50px;
+    position: relative;
+    right: 50%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .phones-qrcode__item:last-child {
+    position: static;
+  }
 }
 
 .footer-qrcode {
