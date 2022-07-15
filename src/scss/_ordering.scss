@@ -2,6 +2,9 @@
 }
 .section--ordering {
     margin-top: 190px;
+    @media (max-width: $mobile) {
+        margin-top: 350px;
+    }
 }
 .ordering {
     // .ordering__container
@@ -16,6 +19,9 @@
     &__description {
         display: flex;
         justify-content: end;
+        @media (max-width: $tablet) {
+            justify-content: start;
+        }
     }
     // .body-ordering__content
     &__content {
@@ -27,6 +33,12 @@
     }
     // .description__title--body-ordering
     &__title--body-ordering {
+        @media (max-width: $tablet) {
+            width: 50%;
+        }
+        @media (max-width: $mobile) {
+            width: 60%;
+        }
     }
     // .description__text
     &__text {
@@ -37,12 +49,25 @@
 }
 .description--body-ordering {
     width: 40%;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
 }
 .content-ordering {
     position: relative;
+    @media (max-width: $tablet) {
+        top: 100px;
+    }
+    @media (max-width: $mobile) {
+        top: 150px;
+    }
+    @media (max-width: $mobileSmall) {
+        top: 230px;
+    }
     // .content-ordering__phone
     &__phone {
         position: relative;
+        z-index: -1;
         &::before {
             display: block;
             content: "";
@@ -60,6 +85,7 @@
         img {
             display: block;
             margin: 0 auto;
+            @include adaptiveValue("max-width", 868, 360);
         }
     }
 }
@@ -67,58 +93,96 @@
     // .phone-ordering__row
     &__row {
         display: flex;
-        width: 62%;
-
-        position: absolute;
-        top: 350px;
-        left: 175px;
+        width: 760px;
+        height: 220px;
+        margin-top: 0;
+        margin-left: 150px;
+        justify-content: space-between;
         z-index: 10;
     }
     // .phone-ordering__row--1
     &__row--1 {
+        @include adaptiveValue("margin-left", 150, 1);
+        @include adaptiveValue("max-width", 760, 300);
+        @media (max-width: $mobile) {
+            height: 180px;
+        }
     }
     // .phone-ordering__text
     &__text {
         font-family: "Roboto";
         font-weight: 500;
-        font-size: rem(22);
-        line-height: rem(27);
+        @include adaptiveValue("font-size", 22, 14);
+        @include adaptiveValue("line-height", 27, 16);
 
         background: #000000;
         border: 0.7px solid rgba(255, 255, 255, 0.5);
         border-radius: 18px;
 
-        padding: 23px;
+        @include adaptiveValue("padding", 23, 20);
     }
     // .phone-ordering__text--1
     &__text--1 {
-        width: 35%;
+        @include adaptiveValue("max-width", 285, 190);
+        align-self: end;
+        @media (max-width: $tablet) {
+            align-self: start;
+        }
+        @media (max-width: $mobileSmall) {
+            margin-right: -30px;
+        }
         &:last-child {
-            /* margin-left: 214px; */
-            position: absolute;
-            top: -130px;
-            right: 0;
+            align-self: start;
             z-index: 10;
-            width: 35%;
+            @include adaptiveValue("max-width", 266, 190);
+            @media (max-width: $tablet) {
+                align-self: flex-end;
+            }
+            @media (max-width: $mobileSmall) {
+                margin-right: -45px;
+            }
         }
     }
     // .phone-ordering__row--2
     &__row--2 {
-        position: absolute;
-        top: 720px;
-        left: 370px;
         z-index: 10;
+        @include adaptiveValue("margin-left", 380, 1);
+        margin-top: 180px;
+        @include adaptiveValue("max-width", 686, 300);
+        height: 150px;
+        @media (max-width: $mobile) {
+            height: 150px;
+            margin-top: 320px;
+        }
     }
     // .phone-ordering__text--2
     &__text--2 {
-        width: 23%;
-        &:last-child {
-            /* margin-left: 214px; */
-            position: absolute;
-            bottom: 50px;
-            right: 60px;
-            z-index: 10;
-            width: 25%;
+        @include adaptiveValue("width", 176, 130);
+        align-self: flex-end;
+        @media (max-width: $tablet) {
+            align-self: start;
         }
+        @media (max-width: $mobileSmall) {
+            margin-right: -45px;
+        }
+        &:last-child {
+            align-self: start;
+
+            z-index: 10;
+            @include adaptiveValue("width", 185, 145);
+
+            @media (max-width: $tablet) {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+.phone-ordering__rows {
+    margin-top: -790px;
+    @media (max-width: $tablet) {
+        margin-top: -700px;
+    }
+    @media (max-width: $mobile) {
+        margin-top: -590px;
     }
 }

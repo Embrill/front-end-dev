@@ -2,6 +2,9 @@
 }
 .section--contacts {
     margin-top: 50px;
+    @media (max-width: $mobile) {
+        margin-top: 400px;
+    }
 }
 .contacts {
     // .contacts__container

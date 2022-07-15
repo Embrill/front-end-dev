@@ -1,6 +1,10 @@
 .section {
 }
 .section--notab {
+    margin-top: 260px;
+    @media (max-width: $mobile) {
+        display: none;
+    }
 }
 .notab {
     // .notab__bg
@@ -22,6 +26,7 @@
         img {
             display: block;
             margin: 0 auto;
+            @include adaptiveValue("max-width", 860, 360);
         }
     }
 }
