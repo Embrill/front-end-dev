@@ -123,6 +123,13 @@ body {
   padding: 0 0.9375rem;
 }
 
+.btn-apps-hover {
+  transition: transform 0.2s linear;
+}
+.btn-apps-hover:hover {
+  transform: scale(1.05);
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -300,18 +307,77 @@ body {
 	}
 }
 */
-.footer {
-  padding: 150px 0 85px 0;
+@media (min-width: 47.99875em) {
+  .footer {
+    padding: 150px 0 85px 0;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 78.4375em) {
+  .footer {
+    padding-top: 9.375rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .footer {
+    padding-top: clamp( 4.375rem , 2.2443181818rem  +  9.0909090909vw , 9.375rem );
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 23.4375em) {
+  .footer {
+    padding-top: 4.375rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 78.4375em) {
+  .footer {
+    padding-bottom: 5.3125rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .footer {
+    padding-bottom: clamp( 1.5rem , -0.1246448864rem  +  6.9318181818vw , 5.3125rem );
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 23.4375em) {
+  .footer {
+    padding-bottom: 1.5rem;
+  }
 }
 .footer__row {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 47.99875em) {
+  .footer__row {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 58px;
+  }
+}
 .item-footer {
   display: flex;
   flex-direction: column;
   width: 20%;
-  gap: 16px;
+}
+@media (min-width: 78.4375em) {
+  .item-footer {
+    gap: 1rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .item-footer {
+    gap: clamp( 0.875rem , 0.8217329545rem  +  0.2272727273vw , 1rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .item-footer {
+    gap: 0.875rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .item-footer {
+    text-align: center;
+    width: 100%;
+  }
 }
 .item-footer:first-child {
   position: relative;
@@ -2427,6 +2493,11 @@ body {
 .form-contacts__button:hover {
   background: rgba(96, 92, 234, 0.5);
 }
+@media (max-width: 29.99875em) {
+  .form-contacts__button {
+    padding: 25px 136px;
+  }
+}
 
 .btns-download__download--form-contacts {
   font-family: "Noto Sans";
@@ -2440,11 +2511,30 @@ body {
 }
 .btns-download__apps--form-contacts {
   display: flex;
-  gap: 60px;
+}
+@media (min-width: 78.4375em) {
+  .btns-download__apps--form-contacts {
+    gap: 3.75rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .btns-download__apps--form-contacts {
+    gap: clamp( 1.25rem , 0.1846590909rem  +  4.5454545455vw , 3.75rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .btns-download__apps--form-contacts {
+    gap: 1.25rem;
+  }
 }
 .btns-download--form-contacts {
   flex-direction: column;
   gap: 32px;
+}
+@media (max-width: 47.99875em) {
+  .btns-download--form-contacts {
+    margin-top: 76px;
+  }
 }
 
 .form-contacts__default {
