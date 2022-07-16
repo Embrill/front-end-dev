@@ -1,6 +1,12 @@
 //====================================================================================================
 .footer {
-    padding: 150px 0 85px 0;
+    @media (min-width: $mobile) {
+        padding: 150px 0 85px 0;
+    }
+    @media (max-width: $mobile) {
+        @include adaptiveValue("padding-top", 150, 70);
+        @include adaptiveValue("padding-bottom", 85, 24);
+    }
     // .footer__container
     &__container {
     }
@@ -11,6 +17,11 @@
     &__row {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $mobile) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 58px;
+        }
     }
     // .footer__item
     &__item {
@@ -20,7 +31,11 @@
     display: flex;
     flex-direction: column;
     width: 20%;
-    gap: 16px;
+    @include adaptiveValue("gap", 16, 14);
+    @media (max-width: $mobile) {
+        text-align: center;
+        width: 100%;
+    }
 
     &:first-child {
         position: relative;

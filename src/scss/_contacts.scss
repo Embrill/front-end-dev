@@ -121,6 +121,10 @@
         &:hover {
             background: $formBtnHoover;
         }
+
+        @media (max-width: $mobileSmall) {
+            padding: 25px 136px;
+        }
     }
 }
 .btns-download {
@@ -142,7 +146,7 @@
     // .btns-download__apps--form-contacts
     &__apps--form-contacts {
         display: flex;
-        gap: 60px;
+        @include adaptiveValue("gap", 60, 20);
     }
     // .btns-download__app-store
     &__app-store {
@@ -160,6 +164,9 @@
 .btns-download--form-contacts {
     flex-direction: column;
     gap: 32px;
+    @media (max-width: $mobile) {
+        margin-top: 76px;
+    }
 }
 
 .form-contacts__default {
