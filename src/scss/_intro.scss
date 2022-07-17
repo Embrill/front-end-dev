@@ -64,7 +64,7 @@
             height: 125px;
             left: 0;
             top: -60px;
-            background: rgba(96, 92, 234, 0.5);
+            background: $introVioletAfter;
             filter: blur(60px);
             z-index: -1;
         }
@@ -88,7 +88,7 @@
         right: -350px;
         top: -310px;
 
-        background: rgba(250, 0, 255, 0.2);
+        background: $introPurpleBefore;
         filter: blur(250px);
         transform: rotate(-105.26deg);
         z-index: -1;

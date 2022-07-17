@@ -1,6 +1,19 @@
-.section {
-}
 .cookies {
+    background-color: $cookieBg;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateY(100%);
+
+    &.cookies-show {
+        transform: translateY(0);
+        transition: transform 0.2s ease;
+    }
+    &.cookies-close {
+        transition: transform 0.2s ease;
+    }
     // .cookies__container
     &__container {
     }
@@ -15,8 +28,9 @@
     &__text {
         font-family: "Noto Sans";
         font-weight: 400;
-        font-size: rem(14);
-        line-height: 19px;
+        @include adaptiveValue("font-size", 14, 12);
+        @include adaptiveValue("line-height", 19, 16);
+        padding-right: rem(20);
     }
     // .cookies__btn
     &__btn {
@@ -25,11 +39,15 @@
         font-weight: 400;
         font-size: rem(14);
         padding: 20px 60px;
-        background: $cookieButtonBG;
+        background: $cookieButtonBg;
         border: 0.5px solid $mainColor;
         border-radius: 6px;
+        transition: background 0.2s linear;
+        &:hover {
+            background: $cookieButtonBgHover;
+        }
+        @media (max-width: $mobile) {
+            padding: 20px 40px;
+        }
     }
-}
-.section--cookies {
-    background-color: $cookieBG;
 }

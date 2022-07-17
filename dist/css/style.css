@@ -715,6 +715,22 @@ body {
   }
 }
 
+.cookies {
+  background-color: #212834;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(100%);
+}
+.cookies.cookies-show {
+  transform: translateY(0);
+  transition: transform 0.2s ease;
+}
+.cookies.cookies-close {
+  transition: transform 0.2s ease;
+}
 .cookies__body {
   display: flex;
   justify-content: space-between;
@@ -724,8 +740,37 @@ body {
 .cookies__text {
   font-family: "Noto Sans";
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 19px;
+  padding-right: 1.25rem;
+}
+@media (min-width: 78.4375em) {
+  .cookies__text {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .cookies__text {
+    font-size: clamp( 0.75rem , 0.6967329545rem  +  0.2272727273vw , 0.875rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .cookies__text {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 78.4375em) {
+  .cookies__text {
+    line-height: 1.1875rem;
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 78.4375em) {
+  .cookies__text {
+    line-height: clamp( 1rem , 0.9200994318rem  +  0.3409090909vw , 1.1875rem );
+  }
+}
+@media (max-width: 23.4375em) {
+  .cookies__text {
+    line-height: 1rem;
+  }
 }
 .cookies__btn {
   display: inline-block;
@@ -736,10 +781,15 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border: 0.5px solid #fff;
   border-radius: 6px;
+  transition: background 0.2s linear;
 }
-
-.section--cookies {
-  background-color: #212834;
+.cookies__btn:hover {
+  background: rgba(94, 94, 94, 0.1);
+}
+@media (max-width: 47.99875em) {
+  .cookies__btn {
+    padding: 20px 40px;
+  }
 }
 
 .section--mission {
@@ -2378,15 +2428,14 @@ body {
   }
 }
 
-.section--notab {
+.notab {
   margin-top: 260px;
 }
 @media (max-width: 47.99875em) {
-  .section--notab {
+  .notab {
     display: none;
   }
 }
-
 .notab__bg {
   padding: 300px 10px;
   background: url("../img/notab/notab-notab.svg") left top repeat;

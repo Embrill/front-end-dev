@@ -1,12 +1,8 @@
-.section {
-}
-.section--notab {
+.notab {
     margin-top: 260px;
     @media (max-width: $mobile) {
         display: none;
     }
-}
-.notab {
     // .notab__bg
     &__bg {
         padding: 300px 10px;
